@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Bulex Digital's portfolio of web design, branding, mobile apps, and digital marketing projects built for clients across Africa.">
+  <title>Portfolio | Bulex Digital</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" aria-label="Bulex Digital Home">
+        <img src="logo-tech.png" alt="Bulex Digital Logo" class="logo-img">
+        <span class="logo-text">Bulex<span class="logo-accent">Digital</span></span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="team.html" class="nav-link">Team</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+          <span class="theme-icon sun">☀️</span>
+          <span class="theme-icon moon">🌙</span>
+        </button>
+        <a href="contact.html" class="btn btn-primary nav-cta">Get a Quote</a>
+        
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <nav class="mobile-nav" aria-label="Mobile Navigation">
+        <ul class="mobile-nav-list">
+          <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+          <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+          <li><a href="portfolio.html" class="mobile-nav-link active">Portfolio</a></li>
+          <li><a href="pricing.html" class="mobile-nav-link">Pricing</a></li>
+          <li><a href="team.html" class="mobile-nav-link">Team</a></li>
+          <li><a href="blog.html" class="mobile-nav-link">Blog</a></li>
+          <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary mobile-cta">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <span class="page-tag">Selected Work</span>
+        <h1 class="page-title">Our Work</h1>
+        <p class="page-desc">Real projects, real results. Every build solves a problem and drives measurable growth.</p>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section section" id="portfolio">
+      <div class="container">
+        
+        <!-- Filter Buttons -->
+        <div class="filter-bar" role="group" aria-label="Filter projects by category">
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" data-filter="web-design" aria-pressed="false">Web Design</button>
+          <button class="filter-btn" data-filter="branding" aria-pressed="false">Branding</button>
+          <button class="filter-btn" data-filter="mobile" aria-pressed="false">Mobile</button>
+          <button class="filter-btn" data-filter="marketing" aria-pressed="false">Marketing</button>
+        </div>
+
+        <!-- Portfolio Grid -->
+        <div class="portfolio-grid-full grid-3" id="portfolioGrid">
+          
+          <!-- Project 1 -->
+          <article class="portfolio-item" data-category="web-design">
+            <div class="portfolio-card" role="button" tabindex="0" 
+                 data-title="PayFlow Dashboard" 
+                 data-category="Web Design" 
+                 data-image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80"
+                 data-desc="A real-time financial analytics dashboard built for a Lagos-based fintech startup. The platform consolidates transaction data from multiple sources into a single, intuitive interface. We reduced their report generation time by 70% and improved decision-making speed for over 200 active business users."
+                 data-tech="React, Node.js, Chart.js, Tailwind CSS">
+              <div class="portfolio-image">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" alt="PayFlow Dashboard" loading="lazy">
+                <div class="portfolio-overlay">
+                  <span class="portfolio-category">Web Design</span>
+                  <span class="portfolio-view">View Project</span>
+                </div>
+              </div>
+              <div class="portfolio-body">
+                <h3 class="portfolio-title">PayFlow Dashboard</h3>
+                <p class="portfolio-desc">Real-time fintech analytics that cut reporting time by 70%.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="portfolio-item" data-category="branding">
+            <div class="portfolio-card" role="button" tabindex="0"
+                 data-title="CloudSync Rebrand"
+                 data-category="Branding"
+                 data-image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80"
+                 data-desc="Complete brand identity overhaul for a B2B SaaS company struggling with low trial-to-paid conversion. We redesigned their logo, built a cohesive visual system, and crafted a new landing page narrative. The result: a 140% increase in trial signups and a 35% boost in paid conversions within 90 days."
+                 data-tech="Figma, Adobe Illustrator, Webflow">
+              <div class="portfolio-image">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" alt="CloudSync Rebrand" loading="lazy">
+                <div class="portfolio-overlay">
+                  <span class="portfolio-category">Branding</span>
+                  <span class="portfolio-view">View Project</span>
+                </div>
+              </div>
+              <div class="portfolio-body">
+                <h3 class="portfolio-title">CloudSync Rebrand</h3>
+                <p class="portfolio-desc">Full identity overhaul driving 140% more trial signups.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="portfolio-item" data-category="mobile">
+            <div class="portfolio-card" role="button" tabindex="0"
+                 data-title="FarmConnect App"
+                 data-category="Mobile"
+                 data-image="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&q=80"
+                 data-desc="A mobile marketplace connecting smallholder farmers in Northern Nigeria directly to urban buyers and exporters. The app features offline-first architecture for low-connectivity areas, USSD fallback, and integrated logistics tracking. Currently serving 5,000+ farmers with a 4.7-star Play Store rating."
+                 data-tech="React Native, Firebase, Node.js, Google Maps API">
+              <div class="portfolio-image">
+                <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80" alt="FarmConnect App" loading="lazy">
+                <div class="portfolio-overlay">
+                  <span class="portfolio-category">Mobile</span>
+                  <span class="portfolio-view">View Project</span>
+                </div>
+              </div>
+              <div class="portfolio-body">
+                <h3 class="portfolio-title">FarmConnect App</h3>
+                <p class="portfolio-desc">Offline-first marketplace linking 5,000+ farmers to buyers.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="portfolio-item" data-category="web-design">
+            <div class="portfolio-card" role="button" tabindex="0"
+                 data-title="MarketHub Store"
+                 data-category="Web Design"
+                 data-image="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80"
+                 data-desc="A full-featured e-commerce platform for a fast-growing fashion retailer in Lagos. Built with automated inventory management, multi-payment gateway support (Paystack, Flutterwave), and a custom admin dashboard. The store handles 500+ daily orders with a 99.9% uptime record."
+                 data-tech="Next.js, PostgreSQL, Redis, Paystack API">
+              <div class="portfolio-image">
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80" alt="MarketHub Store" loading="lazy">
+                <div class="portfolio-overlay">
+                  <span class="portfolio-category">Web Design</span>
+                  <span class="portfolio-view">View Project</span>
+                </div>
+              </div>
+              <div class="portfolio-body">
+                <h3 class="portfolio-title">MarketHub Store</h3>
+                <p class="portfolio-desc">High-volume e-commerce handling 500+ daily orders.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="portfolio-item" data-category="marketing">
+            <div class="portfolio-card" role="button" tabindex="0"
+                 data-title="HealthFirst Growth Campaign"
+                 data-category="Marketing"
+                 data-image="https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=1200&q=80"
+                 data-desc="An integrated digital marketing campaign for a telehealth startup launching in Abuja and Lagos. We managed Meta Ads, Google Ads, and organic content strategy. The campaign generated 12,000 qualified leads in 6 months at a 40% lower cost-per-acquisition than industry benchmarks."
+                 data-tech="Meta Ads, Google Ads, HubSpot, Google Analytics 4">
+              <div class="portfolio-image">
+                <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=800&q=80" alt="HealthFirst Growth Campaign" loading="lazy">
+                <div class="portfolio-overlay">
+                  <span class="portfolio-category">Marketing</span>
+                  <span class="portfolio-view">View Project</span>
+                </div>
+              </div>
+              <div class="portfolio-body">
+                <h3 class="portfolio-title">HealthFirst Campaign</h3>
+                <p class="portfolio-desc">12,000 qualified leads generated in 6 months.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="portfolio-item" data-category="branding">
+            <div class="portfolio-card" role="button" tabindex="0"
+                 data-title="AfriCraft Identity"
+                 data-category="Branding"
+                 data-image="https://images.unsplash.com/photo-1600607686527-6fb886090705?w=1200&q=80"
+                 data-desc="Brand identity and packaging design for an artisanal skincare line exporting from Lagos to London and New York. We developed a luxury-meets-heritage visual language, designed product packaging, and created brand guidelines. Products launched in 3 international retail stores within the first quarter."
+                 data-tech="Adobe Illustrator, Photoshop, Blender (3D mockups)">
+              <div class="portfolio-image">
+                <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?w=800&q=80" alt="AfriCraft Identity" loading="lazy">
+                <div class="portfolio-overlay">
+                  <span class="portfolio-category">Branding</span>
+                  <span class="portfolio-view">View Project</span>
+                </div>
+              </div>
+              <div class="portfolio-body">
+                <h3 class="portfolio-title">AfriCraft Identity</h3>
+                <p class="portfolio-desc">Luxury skincare brand now stocked in 3 countries.</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner section" aria-label="Call to action">
+      <div class="container">
+        <div class="cta-content glass">
+          <h2 class="cta-title">Have a Project in Mind?</h2>
+          <p class="cta-desc">We love solving hard problems. Tell us what you're building and let's create something extraordinary together.</p>
+          <a href="contact.html" class="btn btn-primary btn-lg">Start Your Project</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== PROJECT MODAL ==================== -->
+  <div class="modal-overlay" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-container">
+      <button class="modal-close" id="modalClose" aria-label="Close project details">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      
+      <div class="modal-content">
+        <div class="modal-image-wrapper">
+          <img src="" alt="" class="modal-image" id="modalImage" loading="lazy">
+        </div>
+        <div class="modal-body">
+          <span class="modal-category" id="modalCategory"></span>
+          <h2 class="modal-title" id="modalTitle"></h2>
+          <p class="modal-description" id="modalDescription"></p>
+          
+          <div class="modal-tech">
+            <h4>Technologies Used</h4>
+            <div class="tech-tags" id="modalTech"></div>
+          </div>
+          
+          <a href="contact.html" class="btn btn-primary">Start a Similar Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid grid-4">
+        
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <img src="logo-tech.png" alt="Bulex Digital" class="footer-logo-img">
+            <span>Bulex<span class="logo-accent">Digital</span></span>
+          </a>
+          <p class="footer-about">
+            A Lagos-based digital agency building websites, brands, and experiences that solve real problems and drive measurable growth for ambitious businesses.
+          </p>
+               <div class="social-icons">
+  <a href="https://www.facebook.com/profile.php?id=61579539584737&mibextid=rS40aB7S9Ucbxw6v" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+  <a href="https://www.linkedin.com/in/adegbite-abdullahi-041350308" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+  <a href="https://github.com/Bulex00" class="social-link"><i class="fa-brands fa-github"></i></a>
+  <a href="https://www.instagram.com/abdullahiadegbiite?igsh=djc5a2Nzbnl6cnU5"><i class="fa-brands fa-instagram"></i></a>
+  <a href="https://wa.me/2349168827887" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Web Development</a></li>
+            <li><a href="services.html">Mobile Apps</a></li>
+            <li><a href="services.html">UI/UX Design</a></li>
+            <li><a href="services.html">Branding</a></li>
+            <li><a href="services.html">SEO & Content</a></li>
+            <li><a href="services.html">Digital Marketing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Stay Updated</h4>
+          <p class="footer-newsletter-text">Get weekly insights on web design, branding, and growing your business online.</p>
+          <form class="newsletter-form" id="newsletterForm" novalidate>
+            <div class="newsletter-input-group">
+              <input type="email" class="newsletter-input" id="newsletterEmail" placeholder="Enter your email" required aria-label="Email for newsletter">
+              <button type="submit" class="newsletter-btn" aria-label="Subscribe">→</button>
+            </div>
+            <p class="newsletter-error" id="newsletterError" role="alert" aria-live="polite"></p>
+          </form>
+          <div class="footer-contact-mini">
+            <p>📍 12 Tech Hub Avenue, Yaba, Lagos</p>
+            <p>📞 09168827887</p>
+            <p>✉️ abstar080193@gmail.com</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 Bulex Digital. All rights reserved.</p>
+        <p class="footer-credit">Crafted with 💙 in Yaba, Lagos</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== BACK TO TOP ==================== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- ==================== TOAST NOTIFICATION ==================== -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <span class="toast-message" id="toastMessage"></span>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

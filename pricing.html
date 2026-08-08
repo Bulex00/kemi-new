@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Transparent pricing for web development, branding, and digital marketing services. Monthly and yearly plans from Bulex Digital, Lagos.">
+  <title>Pricing | Bulex Digital</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" aria-label="Bulex Digital Home">
+        <img src="logo-tech.png" alt="Bulex Digital Logo" class="logo-img">
+        <span class="logo-text">Bulex<span class="logo-accent">Digital</span></span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="pricing.html" class="nav-link active">Pricing</a></li>
+          <li><a href="team.html" class="nav-link">Team</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+          <span class="theme-icon sun">☀️</span>
+          <span class="theme-icon moon">🌙</span>
+        </button>
+        <a href="contact.html" class="btn btn-primary nav-cta">Get a Quote</a>
+        
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <nav class="mobile-nav" aria-label="Mobile Navigation">
+        <ul class="mobile-nav-list">
+          <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+          <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+          <li><a href="portfolio.html" class="mobile-nav-link">Portfolio</a></li>
+          <li><a href="pricing.html" class="mobile-nav-link active">Pricing</a></li>
+          <li><a href="team.html" class="mobile-nav-link">Team</a></li>
+          <li><a href="blog.html" class="mobile-nav-link">Blog</a></li>
+          <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary mobile-cta">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <span class="page-tag">Investment</span>
+        <h1 class="page-title">Pricing Plans</h1>
+        <p class="page-desc">Transparent pricing, no hidden fees. Choose a plan that fits your stage, or let's build something custom.</p>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section section" id="pricing">
+      <div class="container">
+        
+        <!-- Billing Toggle -->
+        <div class="billing-toggle-wrapper">
+          <span class="billing-label" id="monthlyLabel">Monthly</span>
+          <button class="billing-toggle" id="billingToggle" aria-label="Switch between monthly and yearly billing" aria-pressed="false">
+            <span class="toggle-track">
+              <span class="toggle-thumb" id="toggleThumb"></span>
+            </span>
+          </button>
+          <span class="billing-label" id="yearlyLabel">Yearly <span class="save-badge">Save 17%</span></span>
+        </div>
+
+        <!-- Pricing Cards -->
+        <div class="pricing-grid grid-3">
+          
+          <!-- Starter -->
+          <article class="pricing-card glass-hover">
+            <div class="pricing-header">
+              <h3 class="pricing-name">Starter</h3>
+              <p class="pricing-subtitle">Perfect for new businesses</p>
+              <div class="pricing-price-wrapper">
+                <span class="pricing-currency">₦</span>
+                <span class="pricing-amount" data-monthly="100000" data-yearly="1000000">100,000</span>
+                <span class="pricing-period" id="periodStarter">/mo</span>
+              </div>
+            </div>
+            <div class="pricing-body">
+              <ul class="pricing-features">
+                <li>
+                  <span class="checkmark" aria-hidden="true">✓</span>
+                  <span>Up to 5 pages</span>
+                </li>
+                <li>
+                  <span class="checkmark" aria-hidden="true">✓</span>
+                  <span>Basic SEO setup</span>
+                </li>
+                <li>
+                  <span class="checkmark" aria-hidden="true">✓</span>
+                  <span>Mobile responsive</span>
+                </li>
+                <li>
+                  <span class="checkmark" aria-hidden="true">✓</span>
+                  <span>Contact form integration</span>
+                </li>
+                <li>
+                  <span class="checkmark" aria-hidden="true">✓</span>
+                  <span>1 month support</span>
+                </li>
+                <li class="feature-disabled">
+                  <span class="checkmark" aria-hidden="true">—</span>
+                  <span>CMS included</span>
+                </li>
+                <li class="feature-disabled">
+                  <span class="checkmark" aria-hidden="true">—</span>
+                  <span>Priority support</span>
+                </li>
+              </ul>
+              <a href="contact.html" class="btn btn-outline pricing-btn">Get Started</a>
+            </div>
+          </article>
+
+          <!-- Professional (Popular) -->
+          <article class="pricing-card pricing-popular glass-hover">
+            <div class="popular-badge">Most Popular</div>
+            <div class="pricing-header">
+              <h3 class="pricing-name">Professional</h3>
+              <p class="pricing-subtitle">For growing businesses</p>
+              <div class="pricing-price-wrapper">
+                <span class="pricing-currency">₦</span>
+                <span class="pricing-amount" data-monthly="250000" data-yearly="2500000">250,000</span>
+                <span class="pricing-period" id="periodPro">/mo</span>
+              </div>
+            </div>
+            <div class="pricing-body">
+              <ul class="pricing-features">
+                <li>
+                  <span class="checkmark" aria-hidden="true">✓</span>
+                  <span>Up to 10 pages</span>
+                </li>
+                <li>
+                  <span class="checkmark" aria-hidden="true">✓</span>
+                  <span>Advanced SEO & analytics</span>
+                </li>
+                <li>
+                  <span class="checkmark" aria-hidden="true">✓</span>
+                  <span>Mobile responsive</span>
+                </li>
+                <li>
+                  <span class="checkmark" aria-hidden="true">✓</span>
+                  <span>Contact form + CRM integration</span>
+                </li>
+                <li>
+                  <span class="checkmark" aria-hidden="true">✓</span>
+                  <span>3 months support</span>
+                </li>
+                <li>
+                  <span class="checkmark" aria-hidden="true">✓</span>
+                  <span>CMS included (WordPress/Custom)</span>
+                </li>
+                <li class="feature-disabled">
+                  <span class="checkmark" aria-hidden="true">—</span>
+                  <span>Priority support</span>
+                </li>
+              </ul>
+              <a href="contact.html" class="btn btn-primary pricing-btn">Get Started</a>
+            </div>
+          </article>
+
+          <!-- Enterprise -->
+          <article class="pricing-card glass-hover">
+            <div class="pricing-header">
+              <h3 class="pricing-name">Enterprise</h3>
+              <p class="pricing-subtitle">For scale and custom needs</p>
+              <div class="pricing-price-wrapper">
+                <span class="pricing-currency">₦</span>
+                <span class="pricing-amount" data-monthly="500000" data-yearly="5000000">500,000</span>
+                <span class="pricing-period" id="periodEnterprise">/mo</span>
+              </div>
+            </div>
+            <div class="pricing-body">
+              <ul class="pricing-features">
+                <li>
+                  <span class="checkmark" aria-hidden="true">✓</span>
+                  <span>Unlimited pages</span>
+                </li>
+                <li>
+                  <span class="checkmark" aria-hidden="true">✓</span>
+                  <span>Advanced SEO & content strategy</span>
+                </li>
+                <li>
+                  <span class="checkmark" aria-hidden="true">✓</span>
+                  <span>Mobile responsive + PWA</span>
+                </li>
+                <li>
+                  <span class="checkmark" aria-hidden="true">✓</span>
+                  <span>Custom features & integrations</span>
+                </li>
+                <li>
+                  <span class="checkmark" aria-hidden="true">✓</span>
+                  <span>6 months support</span>
+                </li>
+                <li>
+                  <span class="checkmark" aria-hidden="true">✓</span>
+                  <span>CMS + Admin dashboard</span>
+                </li>
+                <li>
+                  <span class="checkmark" aria-hidden="true">✓</span>
+                  <span>Priority support (WhatsApp/Call)</span>
+                </li>
+              </ul>
+              <a href="contact.html" class="btn btn-outline pricing-btn">Get Started</a>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="pricing-note">All plans include a free discovery call. Need something different? <a href="contact.html">Let's talk custom.</a></p>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section section" id="faq" aria-label="Frequently asked questions">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Questions</span>
+          <h2 class="section-title">Frequently Asked</h2>
+          <p class="section-desc">Everything you need to know before we build together.</p>
+        </header>
+
+        <div class="faq-list">
+          
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faqAnswer1">
+              <span class="faq-q-text">How long does a typical website project take?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer" id="faqAnswer1" aria-hidden="true">
+              <div class="faq-answer-inner">
+                <p>Most Starter projects are delivered within 2–3 weeks. Professional plans typically take 4–6 weeks, while Enterprise projects with custom features can range from 8–12 weeks. We provide a detailed timeline during our discovery call and keep you updated with weekly progress demos.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faqAnswer2">
+              <span class="faq-q-text">Do you offer payment plans?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer" id="faqAnswer2" aria-hidden="true">
+              <div class="faq-answer-inner">
+                <p>Yes. We typically split projects into three milestones: 40% upfront to kick off, 30% at design approval, and 30% at launch. For retainer plans (monthly/yearly), we invoice at the beginning of each billing period. We accept bank transfers, Paystack, and Flutterwave.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faqAnswer3">
+              <span class="faq-q-text">What happens after the project is launched?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer" id="faqAnswer3" aria-hidden="true">
+              <div class="faq-answer-inner">
+                <p>Every plan includes a support period after launch (1–6 months depending on your plan). During this time, we fix bugs, make minor tweaks, and train your team on the CMS. After the support period, you can opt into a monthly maintenance retainer or reach out for ad-hoc updates.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faqAnswer4">
+              <span class="faq-q-text">Can I upgrade my plan later?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer" id="faqAnswer4" aria-hidden="true">
+              <div class="faq-answer-inner">
+                <p>Absolutely. Many clients start with the Starter plan and upgrade as their business grows. You can add pages, features, or move to a higher-tier plan at any time. We'll simply prorate the difference and continue building on what we've already created together.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner section" aria-label="Call to action">
+      <div class="container">
+        <div class="cta-content glass">
+          <h2 class="cta-title">Still Have Questions?</h2>
+          <p class="cta-desc">Reach out on WhatsApp at <a href="https://wa.me/message/LBRFONB553XBF1">07050803661</a> or send us an email. We reply within 2 hours during business hours.</p>
+          <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid grid-4">
+        
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <img src="logo-tech.png" alt="Bulex Digital" class="footer-logo-img">
+            <span>Bulex<span class="logo-accent">Digital</span></span>
+          </a>
+          <p class="footer-about">
+            A Lagos-based digital agency building websites, brands, and experiences that solve real problems and drive measurable growth for ambitious businesses.
+          </p>
+               <div class="social-icons">
+  <a href="https://www.facebook.com/profile.php?id=61579539584737&mibextid=rS40aB7S9Ucbxw6v" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+  <a href="https://www.linkedin.com/in/adegbite-abdullahi-041350308" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+  <a href="https://github.com/Bulex00" class="social-link"><i class="fa-brands fa-github"></i></a>
+  <a href="https://www.instagram.com/abdullahiadegbiite?igsh=djc5a2Nzbnl6cnU5"><i class="fa-brands fa-instagram"></i></a>
+  <a href="https://wa.me/2349168827887" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Web Development</a></li>
+            <li><a href="services.html">Mobile Apps</a></li>
+            <li><a href="services.html">UI/UX Design</a></li>
+            <li><a href="services.html">Branding</a></li>
+            <li><a href="services.html">SEO & Content</a></li>
+            <li><a href="services.html">Digital Marketing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Stay Updated</h4>
+          <p class="footer-newsletter-text">Get weekly insights on web design, branding, and growing your business online.</p>
+          <form class="newsletter-form" id="newsletterForm" novalidate>
+            <div class="newsletter-input-group">
+              <input type="email" class="newsletter-input" id="newsletterEmail" placeholder="Enter your email" required aria-label="Email for newsletter">
+              <button type="submit" class="newsletter-btn" aria-label="Subscribe">→</button>
+            </div>
+            <p class="newsletter-error" id="newsletterError" role="alert" aria-live="polite"></p>
+          </form>
+          <div class="footer-contact-mini">
+            <p>📍 12 Tech Hub Avenue, Yaba, Lagos</p>
+            <p>📞 09168827887</p>
+            <p>✉️ abstar080193@gmail.com</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 Bulex Digital. All rights reserved.</p>
+        <p class="footer-credit">Crafted with 💙 in Yaba, Lagos</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== BACK TO TOP ==================== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- ==================== TOAST NOTIFICATION ==================== -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <span class="toast-message" id="toastMessage"></span>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
